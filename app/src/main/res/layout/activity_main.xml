@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.readinst.readinstruments.MainActivity">
+
+    <EditText
+        android:id="@+id/PassWord"
+        android:layout_width="215dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColorLink="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/Email"
+        app:layout_constraintRight_toRightOf="@+id/Email"
+        app:layout_constraintTop_toTopOf="@+id/Email" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="215dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorLink="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:text="@string/login_register"
+        app:layout_constraintRight_toRightOf="@+id/PassWord"
+        app:layout_constraintLeft_toLeftOf="@+id/PassWord"
+        app:layout_constraintTop_toTopOf="@+id/PassWord"
+        android:layout_marginTop="60dp" />
+
+</android.support.constraint.ConstraintLayout>
